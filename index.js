@@ -17,6 +17,7 @@ venom
     'sessionName',
     (base64Qr, asciiQR, attempts, urlCode) => {
       console.log(asciiQR); // Optional to log the QR in the terminal
+      console.log(base64Qr); // Optional to log the QR in the terminal
       var matches = base64Qr.match(/^data:([A-Za-z-+\/]+);base64,(.+)$/),
         response = {};
 
@@ -35,6 +36,7 @@ venom
           if (err != null) {
             console.log(err);
           }
+         
         }
       );
     },
